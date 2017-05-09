@@ -2,7 +2,7 @@
 RSVP is an web app for people who are invited they can let you know if they are going to your party, instead of having to call them personally.
 
 == User Stories
-*Home Page*
+*HomePage*
 - As a visitor to the homepage
 - I want ti see pics and where they are registered
 - So I can know what gift to purchase the future couple.
