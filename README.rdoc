@@ -1,28 +1,12 @@
-== README
+== About RSVP
+RSVP is an web app for people who are invited they can let you know if they are going to your party, instead of having to call them personally.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+== User Stories
+*Home Page*
+-As a visitor to the homepage
+- I want ti see pics and where they are registered
+- So I can know what gift to purchase the future couple.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+*RSVP*
+- As a user to the homepage
+-
