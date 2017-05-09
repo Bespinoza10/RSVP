@@ -3,10 +3,11 @@ RSVP is an web app for people who are invited they can let you know if they are 
 
 == User Stories
 *Home Page*
--As a visitor to the homepage
+- As a visitor to the homepage
 - I want ti see pics and where they are registered
 - So I can know what gift to purchase the future couple.
 
 *RSVP*
-- As a user to the homepage
--
+- As a user to the RSVP page
+- I want to login
+- To say yes or no or update my RSVP.
