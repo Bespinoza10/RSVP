@@ -4,7 +4,7 @@ RSVP is an web app for people who are invited they can let you know if they are 
 == User Stories
 *HomePage*
 - As a visitor to the homepage
-- I want ti see pics and where they are registered
+- I want to see pics and where they are registered
 - So I can know what gift to purchase the future couple.
 
 *RSVP*
@@ -19,4 +19,15 @@ RSVP is an web app for people who are invited they can let you know if they are 
 - members:int
 - contactNumber:int
 - yes_no:string
-- comments:textarea
+- comments:text
+
+=== Controllers
+
+*Home*
+- Index Method
+
+*Invites*
+- Index
+- Show
+- Edit
+- Delete
