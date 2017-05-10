@@ -24,7 +24,7 @@ RSVP is an web app for people who are invited they can let you know if they are 
 === Controllers
 
 *Home*
-- Index Method
+- Index
 
 *Invites*
 - Index
