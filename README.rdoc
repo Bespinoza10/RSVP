@@ -11,3 +11,12 @@ RSVP is an web app for people who are invited they can let you know if they are 
 - As a user to the RSVP page
 - I want to login
 - To say yes or no or update my RSVP.
+
+== Code Structure
+=== Models
+*Invite*
+- name:string
+- members:int
+- contactNumber:int
+- yes_no:string
+- comments:textarea
