@@ -25,6 +25,11 @@ body{
 }
 nav{
   background: transparent;
+  ul.nav-links a{
+    font-size: 17px;
+    letter-spacing: 2px;
+    font-weight: 100;
+  }
 }
 
 .center-block{
