@@ -1,0 +1,25 @@
+// Place all the styles related to the Home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.hero-image{
+  background-image: url('/assets/home-bg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  margin-top: -64px;
+  .row .hero-caption{
+    padding-top: 40vh;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 5px;
+    h1{
+      font-weight: 900;
+    }
+  } a.home-btns{
+    width: 50%;
+  }
+}
