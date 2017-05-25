@@ -1,0 +1,22 @@
+header.save_the_date{
+  background-image: url('/assets/savethedate-bg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  padding: 150px;
+  .save_the_date_text{
+    text-transform: capitalize;
+    text-align: center;
+    color: #fff;
+    .date{
+      font-size: 80px;
+      font-weight: 900;
+      letter-spacing: 5px;
+    }
+    .date-text{
+      letter-spacing: 4px;
+      font-weight: 100;
+    }
+  }
+}
