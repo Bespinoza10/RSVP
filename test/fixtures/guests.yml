@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  guest_name: MyString
+  number_of_guest: 1
+  yes_no: false
+  comments: MyText
+
+two:
+  guest_name: MyString
+  number_of_guest: 1
+  yes_no: false
+  comments: MyText
