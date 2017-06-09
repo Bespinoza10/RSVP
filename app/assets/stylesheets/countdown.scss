@@ -1,0 +1,13 @@
+header.countdown-bg{
+  background-image: url('/assets/countdown.jpg');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center;
+  background-size: cover;
+  padding: 150px;
+  .countdown{
+    font-weight: 100;
+    letter-spacing: 2px;
+    color: #fff;
+  }
+}

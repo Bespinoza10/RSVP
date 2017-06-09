@@ -1,3 +1,36 @@
 .macys{
   border-right: 2px solid #000;
+  .registryLogos a > img{
+    transition: ease-in-out .3s all;
+    -webkit-transition: ease-in-out .3s all;
+    -moz-transition: ease-in-out .3s all;
+    -o-transition: ease-in-out .3s all;
+    &:hover{
+      -moz-transform: scale(1.1);
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+      transition: ease-in-out .3s all;
+      -webkit-transition: ease-in-out .3s all;
+      -moz-transition: ease-in-out .3s all;
+      -o-transition: ease-in-out .3s all;
+    }
+  }
+}
+
+.jcp{
+  .registryLogos a > img{
+    transition: ease-in-out .3s all;
+    -webkit-transition: ease-in-out .3s all;
+    -moz-transition: ease-in-out .3s all;
+    -o-transition: ease-in-out .3s all;
+    &:hover{
+      -moz-transform: scale(1.1);
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+      transition: ease-in-out .3s all;
+      -webkit-transition: ease-in-out .3s all;
+      -moz-transition: ease-in-out .3s all;
+      -o-transition: ease-in-out .3s all;
+    }
+  }
 }
