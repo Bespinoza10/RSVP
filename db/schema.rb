@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170609174113) do
+ActiveRecord::Schema.define(version: 20170705023633) do
 
   create_table "guests", force: :cascade do |t|
     t.string   "guest_name"
@@ -20,6 +20,8 @@ ActiveRecord::Schema.define(version: 20170609174113) do
     t.text     "comments"
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
+    t.string   "phone"
+    t.string   "email"
   end
 
 end
