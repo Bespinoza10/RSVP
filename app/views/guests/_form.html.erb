@@ -1,5 +1,5 @@
 <div class="row">
-    <form class="col s12">
+    <div class="col s12">
       <%= form_for @guest do |f| %>
         <% if @guest.errors.any?%>
           <h2><%= pluralize(@guest.errors.count, "error") %> prevented this client from saving:</h2>
@@ -47,7 +47,7 @@
           <i class="material-icons right">send</i>
         </button>
       <%end%>
-    </form>
+    </div>
   </div>
 
   <script>

@@ -1,5 +1,5 @@
 class GuestsController < ApplicationController
-
+before_action :find_guest,  only: [:show, :edit, :update, :destroy]
   def new
     @guest = Guest.new
   end
@@ -8,13 +8,20 @@ class GuestsController < ApplicationController
     @guest = Guest.new guest_params
 
     if @guest.save
-      redirect_to @post, notice: "Your Guest has been created and saved!"
+      redirect_to @guest, notice: "Your Guest has been created and saved!"
     else
       render 'new', notice: "Sorry, Your Guest wasn't succesfully saved."
     end
   end
 
   def show
+    if (@guest.yes_no == true)
+      @yesText = "Yes we are going! :)".html_safe
+    end
+
+    if (@guest.no_yes == true)
+      @noText = "Sorry, we cant go :(".html_safe
+    end
   end
   def edit
   end
@@ -35,11 +42,11 @@ class GuestsController < ApplicationController
   private
 
   def guest_params
-    params.require(:guest).permit(:guest_name, :number_of_guest, :yes_no, :slug, :comments)
+    params.require(:guest).permit(:guest_name, :email, :number_of_guest, :yes_no, :no_yes, :slug, :comments)
   end
 
-  def find_post
-    @guest = Guest.friendly.find(params[:id])
+  def find_guest
+    @guest = Guest.find(params[:id])
   end
 
 

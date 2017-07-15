@@ -1,2 +1,24 @@
-<h1>Your RSVP Profile</h1>
-<%= guests.guest_name%>
+<div class="container">
+  <div class="row">
+    <div class="col s6 center-block">
+      <h2>Your RSVP</h2>
+      <div class="col s12">
+
+        <p><b>Guest Name:</b> <%= @guest.guest_name %> </p>
+      </div>
+      <div class="col s12">
+        <p><b>Your Email:</b><%= @guest.email%></p>
+      </div>
+      <div class="col s12">
+        <p><b>Number of Guests:</b> <%= @guest.number_of_guest%></p>
+      </div>
+      <div class="col s12">
+        <p><b>Are you going?</b> <%= @noText%> <%= @yesText%></p>
+      </div>
+      <div class="col s12">
+        <p><b>Comments:</b></p>
+        <p><%= @guest.comments%></p>
+      </div>
+    </div>
+  </div>
+</div>
