@@ -1,6 +1,6 @@
 class GuestsController < ApplicationController
   before_action :find_guest,  only: [:show, :edit, :update, :destroy]
-  before_action :authenticate_user!, except:[:new, :show, :edit]
+  before_action :authenticate_user!, except:[:new, :create, :show, :edit]
 
   def index
     @guest = Guest.all
@@ -13,19 +13,30 @@ class GuestsController < ApplicationController
     @guest = Guest.new guest_params
 
     if @guest.save
-      redirect_to @guest, notice: "Your Guest has been created and saved!"
+      redirect_to root_path, notice: "Your Guest has been created and saved!"
     else
       render 'new', notice: "Sorry, Your Guest wasn't succesfully saved."
+    end
+
+    @guest.request = request
+    if @guest.deliver
+      flash.now[:error] = nil
+    else
+      flash.now[:error] = 'RSVP was not sent'
     end
   end
 
   def show
     if (@guest.yes_no == true)
       @yesText = "Yes we are going! :)".html_safe
+    else
+      @yesText = ":(".html_safe
     end
 
     if (@guest.no_yes == true)
       @noText = "Sorry, we cant go :(".html_safe
+    else
+      @noText = "Woohoo!".html_safe
     end
   end
   def edit
