@@ -1,5 +1,6 @@
 class GuestsController < ApplicationController
-before_action :find_guest,  only: [:show, :edit, :update, :destroy]
+  before_action :find_guest,  only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!
   def new
     @guest = Guest.new
   end

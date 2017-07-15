@@ -7,7 +7,7 @@
         <p><b>Guest Name:</b> <%= @guest.guest_name %> </p>
       </div>
       <div class="col s12">
-        <p><b>Your Email:</b><%= @guest.email%></p>
+        <p><b>Your Email:</b> <%= @guest.email%></p>
       </div>
       <div class="col s12">
         <p><b>Number of Guests:</b> <%= @guest.number_of_guest%></p>
@@ -19,6 +19,7 @@
         <p><b>Comments:</b></p>
         <p><%= @guest.comments%></p>
       </div>
+      <a><%= link_to "Edit", edit_guest_path(@guest), {class: "orange btn waves-effect waves-light"} %></a>
     </div>
   </div>
 </div>
