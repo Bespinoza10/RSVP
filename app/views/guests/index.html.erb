@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="row">
+    <div class="col s10">
+      <h2>All your invites</h2>
+
+      <% @guest.each do |g| %>
+        <div class="col s4">
+          <h4><%= link_to g.guest_name, g %></h4>
+
+        </div>
+      <%end%>
+    </div>
+  </div>
+</div>
