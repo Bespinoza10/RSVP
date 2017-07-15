@@ -15,16 +15,27 @@
         <a href="#!" class="brand-logo">Brandon & Thanya</a>
         <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">=</i></a>
         <ul class="right hide-on-med-and-down nav-links">
-          <li><a href="sass.html">About Us</a></li>
-          <li><a href="badges.html">Gallery</a></li>
-          <li><a href="collapsible.html">Registry</a></li>
-          <li><a href="mobile.html">RSVP</a></li>
+          <li><a href="#about_us">About Us</a></li>
+          <li><a href="#registry">Registry</a></li>
+          <%if user_signed_in?%>
+          <li><%= link_to "Your RSVPs", guests_path%></li>
+          <li><%= link_to "Sign Out", destroy_user_session_path, method: :delete%></li>
+          <%else%>
+          <li><%= link_to "RSVP", new_guest_path%></li>
+          <li><%= link_to "Sign In", new_user_session_path%></li>
+          <%end%>
         </ul>
         <ul class="side-nav" id="mobile-demo">
           <li><a href="sass.html">About Us</a></li>
           <li><a href="badges.html">Gallery</a></li>
           <li><a href="collapsible.html">Registery</a></li>
-          <li><a href="mobile.html">RSVP</a></li>
+          <%if user_signed_in?%>
+          <li><%= link_to "Your RSVPs", guests_path%></li>
+          <li><%= link_to "Sign Out", destroy_user_session_path, method: :delete%></li>
+          <%else%>
+          <li><%= link_to "RSVP", new_guest_path%></li>
+          <li><%= link_to "Sign In", new_user_session_path%></li>
+          <%end%>
         </ul>
       </div>
     </div>

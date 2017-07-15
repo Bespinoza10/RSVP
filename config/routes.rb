@@ -6,7 +6,6 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'home#index'
   resources :guests
-  get '/users' => 'guests#new', as: :user_root # creates user_root_path
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

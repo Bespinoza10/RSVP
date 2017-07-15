@@ -1,6 +1,6 @@
 class GuestsController < ApplicationController
   before_action :find_guest,  only: [:show, :edit, :update, :destroy]
-  before_action :authenticate_user!
+  before_action :authenticate_user!, except:[:new, :show, :edit]
 
   def index
     @guest = Guest.all
