@@ -11,7 +11,7 @@ class Guest < ActiveRecord::Base
   def headers
     {
       :subject => "RSVP",
-      :to => "espinozab100@gmail.com",
+      :to => ['espinozab100@gmail.com', 'thanya.gaitan@gmail.com'],
       :from => %("#{guest_name}" <#{email}>)
     }
   end
