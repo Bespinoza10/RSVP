@@ -5,7 +5,7 @@ class Guest < ActiveRecord::Base
   attribute :number_of_guest,   :validate => true
   attribute :yes_no,   :validate => false
   attribute :no_yes,   :validate => false
-  attribute :comments,   :validate => true
+  attribute :comments,   :validate => false
   attribute :nickname,  :captcha  => true
 
   def headers

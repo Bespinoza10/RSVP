@@ -39,3 +39,18 @@ $(document).ready(function(){
     } // End if
   });
 });
+$(window).scroll(function() {
+  if ($(document).scrollTop() > 50) {
+    $('nav').addClass('shrink');
+  } else {
+    $('nav').removeClass('shrink');
+  }
+});
+
+$(document).ready(function(){
+  setTimeout(function(){
+    $('#notice-wrapper').fadeOut("slow", function(){
+      $(this).remove();
+    })
+  }, 3000);
+});
