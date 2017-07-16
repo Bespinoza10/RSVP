@@ -1,6 +1,9 @@
-<header class="countdown-bg">
-  <div class="col s10 center-block">
-    <h1 id="jsCountdown" class="countdown center-align"></h1>
+<header class="countdown-bg bg_images">
+  <div class="row">
+    <div class="col s12 m10 center-block">
+      <h1 id="jsCountdown" class="countdown center-align"></h1>
+      <h1 id="MobilejsCountdown" class="mobilecountdown center-align"></h1>
+    </div>
   </div>
 </header>
 
@@ -32,13 +35,17 @@
       var s = " secs";
       var countdown = days + d + divider.fontcolor("#26a69a") + hours + h + divider.fontcolor("#26a69a") + minutes + m + divider.fontcolor("#26a69a") + seconds + s;
 
+      var Mobilecountdown = days + d + "<br>" + hours + h + "<br>" + minutes + m + "<br>" + seconds + s;
+
       // Output the result in an element with id="demo"
       document.getElementById("jsCountdown").innerHTML = countdown;
+      document.getElementById("MobilejsCountdown").innerHTML = Mobilecountdown;
 
       // If the count down is over, write some text
       if (distance < 0) {
           clearInterval(x);
           document.getElementById("jsCountdown").innerHTML = "WE ARE MARRIED";
+          document.getElementById("MobilejsCountdown").innerHTML = "WE ARE MARRIED";
       }
   }, 1000);
 </script>

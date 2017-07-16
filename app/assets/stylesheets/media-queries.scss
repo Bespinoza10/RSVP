@@ -4,6 +4,26 @@
   }
 }
 
+@media screen and (max-width: 930px){
+  header.save_the_date, header.countdown-bg{
+    padding: 20px !important;
+    font-size: 15px !important;
+  }
+}
+@media screen and (max-width: 700px){
+  .bg_images{
+    background-attachment: scroll !important;
+  }
+  header.countdown-bg .countdown{
+    display: none !important;
+  }
+  header.countdown-bg .mobilecountdown{
+    display: block !important;
+    font-weight: 100;
+    letter-spacing: 2px;
+    color: #fff;
+  }
+}
 @media screen and (max-width: 450px){
   .brand-logo{
     font-size: 20px !important;
@@ -16,4 +36,5 @@
     text-align: center;
     margin-bottom: 10px;
   }
+
 }
