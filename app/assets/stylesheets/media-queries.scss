@@ -6,8 +6,13 @@
 
 @media screen and (max-width: 930px){
   header.save_the_date, header.countdown-bg{
-    padding: 20px !important;
-    font-size: 15px !important;
+    padding: 50px !important;
+    h1{
+      font-size: 60px !important;
+    }
+    h3{
+      font-size: 30px !important;
+    }
   }
 }
 @media screen and (max-width: 700px){
@@ -39,6 +44,15 @@
     font-size: 14px;
     text-align: center;
     margin-bottom: 10px;
+  }
+  header.save_the_date, header.countdown-bg{
+    padding: 20px !important;
+    h1{
+      font-size: 40px !important;
+    }
+    h3{
+      font-size: 20px !important;
+    }
   }
 
 }
