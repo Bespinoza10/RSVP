@@ -13,9 +13,9 @@ class GuestsController < ApplicationController
     @guest = Guest.new guest_params
 
     if @guest.save
-      redirect_to root_path, notice: "Your Guest has been created and saved!"
+      redirect_to root_path, notice: "Gracias por confirmar su presencia!"
     else
-      render 'new', notice: "Sorry, Your Guest wasn't succesfully saved."
+      render 'new', notice: "Error! Intente de nuevo."
     end
 
     @guest.request = request
@@ -62,7 +62,7 @@ class GuestsController < ApplicationController
   end
 
   def find_guest
-    @guest = Guest.find(params[:id])
+    @guest = Guest.friendly.find(params[:id])
   end
 
 
