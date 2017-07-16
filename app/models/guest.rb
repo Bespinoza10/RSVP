@@ -1,6 +1,6 @@
 class Guest < ActiveRecord::Base
-  extend FriendlyId
-  friendly_id :guest_name, use: :slugged
+  # extend FriendlyId
+  # friendly_id :guest_name, use: :slugged
   include MailForm::Delivery
   attribute :guest_name,           :validate => true
   attribute :email,                   :validate => /\A([\w\.%\+\-]+)@([\w\-]+\.)+([\w]{2,})\z/i
